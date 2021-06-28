@@ -1,6 +1,6 @@
 {
   "name": "@stdlib/number-float32-base-to-binary-string",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "Return a string giving the literal bit representation of a single-precision floating-point number.",
   "license": "Apache-2.0",
   "author": {
