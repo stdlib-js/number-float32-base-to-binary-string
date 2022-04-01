@@ -1,0 +1,41 @@
+{
+  "name": "@stdlib/number-float32-base-to-binary-string",
+  "version": "0.0.0",
+  "description": "Return a string giving the literal bit representation of a single-precision floating-point number.",
+  "license": "Apache-2.0",
+  "type": "module",
+  "main": "./mod.js",
+  "homepage": "https://stdlib.io",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/stdlib-js/number-float32-base-to-binary-string.git"
+  },
+  "bugs": {
+    "url": "https://github.com/stdlib-js/stdlib/issues"
+  },
+  "keywords": [
+    "stdlib",
+    "stdtypes",
+    "base",
+    "utilities",
+    "utility",
+    "utils",
+    "util",
+    "types",
+    "type",
+    "number",
+    "binary",
+    "bin",
+    "bits",
+    "float32",
+    "single",
+    "float",
+    "floating-point",
+    "tostring",
+    "string"
+  ],
+  "funding": {
+    "type": "patreon",
+    "url": "https://www.patreon.com/athan"
+  }
+}
