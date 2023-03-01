@@ -44,7 +44,8 @@
     "@stdlib/math-base-special-floor": "^0.0.8",
     "@stdlib/string-left-pad": "^0.0.9",
     "@stdlib/string-repeat": "^0.0.9",
-    "@stdlib/string-right-pad": "^0.0.9"
+    "@stdlib/string-right-pad": "^0.0.9",
+    "@stdlib/error-tools-fmtprodmsg": "^0.0.2"
   },
   "devDependencies": {
     "@stdlib/assert-is-string": "^0.0.8",
