@@ -1,6 +1,6 @@
 {
   "name": "@stdlib/number-float32-base-to-binary-string",
-  "version": "0.0.7",
+  "version": "0.1.0",
   "description": "Return a string giving the literal bit representation of a single-precision floating-point number.",
   "license": "Apache-2.0",
   "author": {
@@ -37,22 +37,22 @@
     "url": "https://github.com/stdlib-js/stdlib/issues"
   },
   "dependencies": {
-    "@stdlib/constants-float32-exponent-bias": "^0.0.8",
-    "@stdlib/constants-float32-ninf": "^0.0.7",
-    "@stdlib/constants-float32-pinf": "^0.0.7",
-    "@stdlib/math-base-special-abs": "^0.0.6",
-    "@stdlib/math-base-special-floor": "^0.0.8",
-    "@stdlib/string-left-pad": "^0.0.9",
-    "@stdlib/string-repeat": "^0.0.9",
-    "@stdlib/string-right-pad": "^0.0.9"
+    "@stdlib/constants-float32-exponent-bias": "^0.1.0",
+    "@stdlib/constants-float32-ninf": "^0.1.0",
+    "@stdlib/constants-float32-pinf": "^0.1.0",
+    "@stdlib/math-base-special-abs": "^0.1.0",
+    "@stdlib/math-base-special-floor": "^0.1.0",
+    "@stdlib/string-left-pad": "^0.1.0",
+    "@stdlib/string-repeat": "^0.1.0",
+    "@stdlib/string-right-pad": "^0.1.0"
   },
   "devDependencies": {
-    "@stdlib/assert-is-string": "^0.0.8",
-    "@stdlib/bench": "^0.0.12",
-    "@stdlib/constants-float32-smallest-normal": "^0.0.8",
+    "@stdlib/assert-is-string": "^0.1.0",
+    "@stdlib/bench": "^0.1.0",
+    "@stdlib/constants-float32-smallest-normal": "^0.1.0",
     "@stdlib/math-base-special-pow": "^0.0.7",
-    "@stdlib/math-base-special-round": "^0.0.7",
-    "@stdlib/number-float64-base-to-float32": "^0.0.7",
+    "@stdlib/math-base-special-round": "^0.1.0",
+    "@stdlib/number-float64-base-to-float32": "^0.1.0",
     "@stdlib/random-base-randu": "^0.0.8",
     "tape": "git+https://github.com/kgryte/tape.git#fix/globby",
     "istanbul": "^0.4.1",
