@@ -37,10 +37,10 @@ var NUM_EXPONENT_BITS = 8;
 
 // FIXTURES //
 
-var small = require( './../..xtures/julia/bits_1e-36_1e-38.json' );
-var medium = require( './../..xtures/julia/bits_-1e3_1e3.json' );
-var large = require( './../..xtures/julia/bits_1e36_1e38.json' );
-var subnormal = require( './../..xtures/julia/bits_1e-39_1e-45.json' );
+var small = require( './../fixtures/julia/bits_1e-36_1e-38.json' );
+var medium = require( './../fixtures/julia/bits_-1e3_1e3.json' );
+var large = require( './../fixtures/julia/bits_1e36_1e38.json' );
+var subnormal = require( './../fixtures/julia/bits_1e-39_1e-45.json' );
 
 
 // TESTS //
