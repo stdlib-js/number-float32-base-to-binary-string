@@ -35,38 +35,30 @@ limitations under the License.
 
 > Return a string giving the literal bit representation of a [single-precision floating-point number][ieee754].
 
+<section class="installation">
 
+## Installation
+
+```bash
+npm install @stdlib/number-float32-base-to-binary-string
+```
+
+Alternatively,
+
+-   To load the package in a website via a `script` tag without installation and bundlers, use the [ES Module][es-module] available on the [`esm` branch][esm-url].
+-   If you are using Deno, visit the [`deno` branch][deno-url].
+-   For use in Observable, or in browser/node environments, use the [Universal Module Definition (UMD)][umd] build available on the [`umd` branch][umd-url].
+
+The [branches.md][branches-url] file summarizes the available branches and displays a diagram illustrating their relationships.
+
+</section>
 
 <section class="usage">
 
 ## Usage
 
-To use in Observable,
-
 ```javascript
-toBinaryStringf = require( 'https://cdn.jsdelivr.net/gh/stdlib-js/number-float32-base-to-binary-string@umd/browser.js' )
-```
-
-To vendor stdlib functionality and avoid installing dependency trees for Node.js, you can use the UMD server build:
-
-```javascript
-var toBinaryStringf = require( 'path/to/vendor/umd/number-float32-base-to-binary-string/index.js' )
-```
-
-To include the bundle in a webpage,
-
-```html
-<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/number-float32-base-to-binary-string@umd/browser.js"></script>
-```
-
-If no recognized module system is present, access bundle contents via the global scope:
-
-```html
-<script type="text/javascript">
-(function () {
-    window.toBinaryStringf;
-})();
-</script>
+var toBinaryStringf = require( '@stdlib/number-float32-base-to-binary-string' );
 ```
 
 #### toBinaryStringf( x )
@@ -91,7 +83,7 @@ The function handles [subnormals][subnormals].
 ```javascript
 var toFloat32 = require( '@stdlib/number-float64-base-to-float32' );
 
-str = toBinaryStringf( toFloat32( -3.14e-39 ) );
+var str = toBinaryStringf( toFloat32( -3.14e-39 ) );
 // returns '10000000001000100011000100001011'
 
 str = toBinaryStringf( toFloat32( 1.4e-45 ) );
@@ -104,7 +96,7 @@ The function handles special values.
 var PINF = require( '@stdlib/constants-float32-pinf' );
 var NINF = require( '@stdlib/constants-float32-ninf' );
 
-str = toBinaryStringf( 0.0 );
+var str = toBinaryStringf( 0.0 );
 // returns '00000000000000000000000000000000'
 
 str = toBinaryStringf( -0.0 );
@@ -130,17 +122,12 @@ str = toBinaryStringf( NINF );
 
 <!-- eslint no-undef: "error" -->
 
-```html
-<!DOCTYPE html>
-<html lang="en">
-<body>
-<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/random-base-randu@umd/browser.js"></script>
-<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/math-base-special-round@umd/browser.js"></script>
-<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/math-base-special-pow@umd/browser.js"></script>
-<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/number-float64-base-to-float32@umd/browser.js"></script>
-<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/number-float32-base-to-binary-string@umd/browser.js"></script>
-<script type="text/javascript">
-(function () {
+```javascript
+var randu = require( '@stdlib/random-base-randu' );
+var round = require( '@stdlib/math-base-special-round' );
+var pow = require( '@stdlib/math-base-special-pow' );
+var float64ToFloat32 = require( '@stdlib/number-float64-base-to-float32' );
+var toBinaryStringf = require( '@stdlib/number-float32-base-to-binary-string' );
 
 var frac;
 var sign;
@@ -166,11 +153,6 @@ for ( i = 0; i < 100; i++ ) {
     b = toBinaryStringf( x );
     console.log( b );
 }
-
-})();
-</script>
-</body>
-</html>
 ```
 
 </section>
@@ -180,6 +162,13 @@ for ( i = 0; i < 100; i++ ) {
 <!-- Section for related `stdlib` packages. Do not manually edit this section, as it is automatically populated. -->
 
 <section class="related">
+
+* * *
+
+## See Also
+
+-   <span class="package-name">[`@stdlib/number-float32/base/from-binary-string`][@stdlib/number/float32/base/from-binary-string]</span><span class="delimiter">: </span><span class="description">create a single-precision floating-point number from a literal bit representation.</span>
+-   <span class="package-name">[`@stdlib/number-float64/base/to-binary-string`][@stdlib/number/float64/base/to-binary-string]</span><span class="delimiter">: </span><span class="description">return a string giving the literal bit representation of a double-precision floating-point number.</span>
 
 </section>
 
@@ -257,6 +246,14 @@ Copyright &copy; 2016-2023. The Stdlib [Authors][stdlib-authors].
 [ieee754]: https://en.wikipedia.org/wiki/IEEE_754-2008
 
 [subnormals]: https://en.wikipedia.org/wiki/Denormal_number
+
+<!-- <related-links> -->
+
+[@stdlib/number/float32/base/from-binary-string]: https://github.com/stdlib-js/number-float32-base-from-binary-string
+
+[@stdlib/number/float64/base/to-binary-string]: https://github.com/stdlib-js/number-float64-base-to-binary-string
+
+<!-- </related-links> -->
 
 </section>
 
