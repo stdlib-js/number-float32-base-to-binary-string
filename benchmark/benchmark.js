@@ -20,7 +20,7 @@
 
 // MODULES //
 
-var bench = require( '@stdlib/bench' );
+var bench = require( '@stdlib/bench-harness' );
 var randu = require( '@stdlib/random-base-randu' );
 var isString = require( '@stdlib/assert-is-string' ).isPrimitive;
 var toFloat32 = require( '@stdlib/number-float64-base-to-float32' );
