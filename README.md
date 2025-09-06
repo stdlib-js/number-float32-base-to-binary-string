@@ -35,32 +35,14 @@ limitations under the License.
 
 > Return a string giving the literal bit representation of a [single-precision floating-point number][ieee754].
 
-<section class="installation">
 
-## Installation
-
-```bash
-npm install @stdlib/number-float32-base-to-binary-string
-```
-
-Alternatively,
-
--   To load the package in a website via a `script` tag without installation and bundlers, use the [ES Module][es-module] available on the [`esm`][esm-url] branch (see [README][esm-readme]).
--   If you are using Deno, visit the [`deno`][deno-url] branch (see [README][deno-readme] for usage intructions).
--   For use in Observable, or in browser/node environments, use the [Universal Module Definition (UMD)][umd] build available on the [`umd`][umd-url] branch (see [README][umd-readme]).
-
-The [branches.md][branches-url] file summarizes the available branches and displays a diagram illustrating their relationships.
-
-To view installation and usage instructions specific to each branch build, be sure to explicitly navigate to the respective README files on each branch, as linked to above.
-
-</section>
 
 <section class="usage">
 
 ## Usage
 
 ```javascript
-var toBinaryStringf = require( '@stdlib/number-float32-base-to-binary-string' );
+import toBinaryStringf from 'https://cdn.jsdelivr.net/gh/stdlib-js/number-float32-base-to-binary-string@deno/mod.js';
 ```
 
 #### toBinaryStringf( x )
@@ -68,7 +50,7 @@ var toBinaryStringf = require( '@stdlib/number-float32-base-to-binary-string' );
 Returns a `string` giving the literal bit representation of a [single-precision floating-point number][ieee754].
 
 ```javascript
-var toFloat32 = require( '@stdlib/number-float64-base-to-float32' );
+import toFloat32 from 'https://cdn.jsdelivr.net/gh/stdlib-js/number-float64-base-to-float32@deno/mod.js';
 
 var str = toBinaryStringf( toFloat32( 4.0 ) );
 // returns '01000000100000000000000000000000'
@@ -83,7 +65,7 @@ str = toBinaryStringf( toFloat32( -1.0e38 ) );
 The function handles [subnormals][subnormals].
 
 ```javascript
-var toFloat32 = require( '@stdlib/number-float64-base-to-float32' );
+import toFloat32 from 'https://cdn.jsdelivr.net/gh/stdlib-js/number-float64-base-to-float32@deno/mod.js';
 
 var str = toBinaryStringf( toFloat32( -3.14e-39 ) );
 // returns '10000000001000100011000100001011'
@@ -95,8 +77,8 @@ str = toBinaryStringf( toFloat32( 1.4e-45 ) );
 The function handles special values.
 
 ```javascript
-var PINF = require( '@stdlib/constants-float32-pinf' );
-var NINF = require( '@stdlib/constants-float32-ninf' );
+import PINF from 'https://cdn.jsdelivr.net/gh/stdlib-js/constants-float32-pinf@deno/mod.js';
+import NINF from 'https://cdn.jsdelivr.net/gh/stdlib-js/constants-float32-ninf@deno/mod.js';
 
 var str = toBinaryStringf( 0.0 );
 // returns '00000000000000000000000000000000'
@@ -125,11 +107,11 @@ str = toBinaryStringf( NINF );
 <!-- eslint no-undef: "error" -->
 
 ```javascript
-var randu = require( '@stdlib/random-base-randu' );
-var round = require( '@stdlib/math-base-special-round' );
-var pow = require( '@stdlib/math-base-special-pow' );
-var float64ToFloat32 = require( '@stdlib/number-float64-base-to-float32' );
-var toBinaryStringf = require( '@stdlib/number-float32-base-to-binary-string' );
+import randu from 'https://cdn.jsdelivr.net/gh/stdlib-js/random-base-randu@deno/mod.js';
+import round from 'https://cdn.jsdelivr.net/gh/stdlib-js/math-base-special-round@deno/mod.js';
+import pow from 'https://cdn.jsdelivr.net/gh/stdlib-js/math-base-special-pow@deno/mod.js';
+import float64ToFloat32 from 'https://cdn.jsdelivr.net/gh/stdlib-js/number-float64-base-to-float32@deno/mod.js';
+import toBinaryStringf from 'https://cdn.jsdelivr.net/gh/stdlib-js/number-float32-base-to-binary-string@deno/mod.js';
 
 var frac;
 var sign;
@@ -185,7 +167,7 @@ for ( i = 0; i < 100; i++ ) {
 
 ## Notice
 
-This package is part of [stdlib][stdlib], a standard library for JavaScript and Node.js, with an emphasis on numerical and scientific computing. The library provides a collection of robust, high performance libraries for mathematics, statistics, streams, utilities, and more.
+This package is part of [stdlib][stdlib], a standard library with an emphasis on numerical and scientific computing. The library provides a collection of robust, high performance libraries for mathematics, statistics, streams, utilities, and more.
 
 For more information on the project, filing bug reports and feature requests, and guidance on how to develop [stdlib][stdlib], see the main project [repository][stdlib].
 
@@ -254,9 +236,9 @@ Copyright &copy; 2016-2025. The Stdlib [Authors][stdlib-authors].
 
 <!-- <related-links> -->
 
-[@stdlib/number/float32/base/from-binary-string]: https://github.com/stdlib-js/number-float32-base-from-binary-string
+[@stdlib/number/float32/base/from-binary-string]: https://github.com/stdlib-js/number-float32-base-from-binary-string/tree/deno
 
-[@stdlib/number/float64/base/to-binary-string]: https://github.com/stdlib-js/number-float64-base-to-binary-string
+[@stdlib/number/float64/base/to-binary-string]: https://github.com/stdlib-js/number-float64-base-to-binary-string/tree/deno
 
 <!-- </related-links> -->
 
