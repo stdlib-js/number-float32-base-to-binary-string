@@ -4,7 +4,19 @@
 
 <section class="release" id="unreleased">
 
-## Unreleased (2025-09-06)
+## Unreleased (2025-09-14)
+
+<section class="issues">
+
+### Closed Issues
+
+This release closes the following issue:
+
+[#8027](https://github.com/stdlib-js/stdlib/issues/8027)
+
+</section>
+
+<!-- /.issues -->
 
 <section class="commits">
 
@@ -12,6 +24,7 @@
 
 <details>
 
+-   [`22abc2e`](https://github.com/stdlib-js/stdlib/commit/22abc2e5ddc56329be7611dbc69682522e797eca) - **chore:** address commit comments [(#8072)](https://github.com/stdlib-js/stdlib/pull/8072) _(by Vara Rahul Rajana, Athan Reines)_
 -   [`8b0b780`](https://github.com/stdlib-js/stdlib/commit/8b0b78084a2ff5d7a76ba3c5945b13d7f0906f4f) - **docs:** fix TypeScript declaration linting errors _(by Philipp Burckhardt)_
 -   [`21ec206`](https://github.com/stdlib-js/stdlib/commit/21ec2060d7496322ce32d4f984230d0c131974cc) - **docs:** clean-up example code _(by Philipp Burckhardt)_
 -   [`7483bef`](https://github.com/stdlib-js/stdlib/commit/7483bef13b1d3241347266d25a02957269419825) - **test:** use .strictEqual() instead of .equal() _(by Philipp Burckhardt)_
@@ -26,9 +39,11 @@
 
 ### Contributors
 
-A total of 1 person contributed to this release. Thank you to this contributor:
+A total of 3 people contributed to this release. Thank you to the following contributors:
 
+-   Athan Reines
 -   Philipp Burckhardt
+-   Vara Rahul Rajana
 
 </section>
 
