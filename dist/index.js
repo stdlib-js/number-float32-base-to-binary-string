@@ -1,4 +1,4 @@
-"use strict";var l=function(r,e){return function(){return e||r((e={exports:{}}).exports,e),e.exports}};var p=l(function(j,N){
+"use strict";var l=function(r,e){return function(){try{return e||r((e={exports:{}}).exports,e),e.exports}catch(t){throw (e=0, t)}};};var p=l(function(j,N){
 var T=require('@stdlib/math-base-special-floor/dist');function d(r){for(var e="",t;r>0;)t=r/2,r=T(t),t===r?e="0"+e:e="1"+e;return e}N.exports=d
 });var c=l(function(w,b){
 var q=149,A=24;function M(r){var e,t,i,a;if(e="",r===0)return e;for(a=q,i=0;i<q&&(t=r*2,t>=1?(r=t-1,e+="1",a===q&&(a=i)):(r=t,e+="0"),!(t===1||i-a>A));i++);return e}b.exports=M
